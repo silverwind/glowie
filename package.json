@@ -1,0 +1,24 @@
+{
+  "name": "glowie",
+  "version": "0.0.0",
+  "description": "Teeny-tiny terminal color library which does not perform any color support detection",
+  "author": "silverwind <me@silverwind.io>",
+  "repository": "silverwind/glowie",
+  "license": "BSD-2-Clause",
+  "exports": "./index.js",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "eslint": "8.41.0",
+    "eslint-config-silverwind": "73.0.0",
+    "updates": "14.1.0",
+    "versions": "11.0.0",
+    "vitest": "0.31.1"
+  }
+}
