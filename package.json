@@ -1,6 +1,6 @@
 {
   "name": "glowie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Teeny-tiny terminal color library which does not perform any color support detection",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/glowie",
