@@ -7,13 +7,13 @@ Teeny-tiny terminal color library which does not perform any color support detec
 ```js
 import {green, disableColor} from "glowie";
 
-console.info(green("foo"));
-// "foo" in color
+console.info(green("foo", "bar"));
+// "foo bar" in color
 
 disableColor();
 
-console.info(green("foo"));
-// "foo" in no color
+console.info(green("foo", "bar"));
+// "foo bar" in no color
 ```
 
 © [silverwind](https://github.com/silverwind), distributed under BSD licence

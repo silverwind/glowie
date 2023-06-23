@@ -8,36 +8,36 @@ export function disableColor() {
   enabled = false;
 }
 
-function format(str, start, end) {
-  return enabled ? `\u001B[${start}m${str}\u001B[${end}m` : str;
+function format(args, start, end) {
+  return enabled ? `\u001B[${start}m${args.join(" ")}\u001B[${end}m` : args.join(" ");
 }
 
-export const reset = str => format(str, 0, 0);
-export const bold = str => format(str, 1, 22);
-export const dim = str => format(str, 2, 22);
-export const italic = str => format(str, 3, 23);
-export const underline = str => format(str, 4, 24);
-export const overline = str => format(str, 53, 55);
-export const inverse = str => format(str, 7, 27);
-export const hidden = str => format(str, 8, 28);
-export const strikethrough = str => format(str, 9, 29);
+export const reset = (...args) => format(args, 0, 0);
+export const bold = (...args) => format(args, 1, 22);
+export const dim = (...args) => format(args, 2, 22);
+export const italic = (...args) => format(args, 3, 23);
+export const underline = (...args) => format(args, 4, 24);
+export const overline = (...args) => format(args, 53, 55);
+export const inverse = (...args) => format(args, 7, 27);
+export const hidden = (...args) => format(args, 8, 28);
+export const strikethrough = (...args) => format(args, 9, 29);
 
-export const black = str => format(str, 30, 39);
-export const red = str => format(str, 31, 39);
-export const green = str => format(str, 32, 39);
-export const yellow = str => format(str, 33, 39);
-export const blue = str => format(str, 34, 39);
-export const magenta = str => format(str, 35, 39);
-export const cyan = str => format(str, 36, 39);
-export const white = str => format(str, 37, 39);
-export const gray = str => format(str, 90, 39);
+export const black = (...args) => format(args, 30, 39);
+export const red = (...args) => format(args, 31, 39);
+export const green = (...args) => format(args, 32, 39);
+export const yellow = (...args) => format(args, 33, 39);
+export const blue = (...args) => format(args, 34, 39);
+export const magenta = (...args) => format(args, 35, 39);
+export const cyan = (...args) => format(args, 36, 39);
+export const white = (...args) => format(args, 37, 39);
+export const gray = (...args) => format(args, 90, 39);
 
-export const bgBlack = str => format(str, 40, 49);
-export const bgRed = str => format(str, 41, 49);
-export const bgGreen = str => format(str, 42, 49);
-export const bgYellow = str => format(str, 43, 49);
-export const bgBlue = str => format(str, 44, 49);
-export const bgMagenta = str => format(str, 45, 49);
-export const bgCyan = str => format(str, 46, 49);
-export const bgWhite = str => format(str, 47, 49);
-export const bgGray = str => format(str, 100, 49);
+export const bgBlack = (...args) => format(args, 40, 49);
+export const bgRed = (...args) => format(args, 41, 49);
+export const bgGreen = (...args) => format(args, 42, 49);
+export const bgYellow = (...args) => format(args, 43, 49);
+export const bgBlue = (...args) => format(args, 44, 49);
+export const bgMagenta = (...args) => format(args, 45, 49);
+export const bgCyan = (...args) => format(args, 46, 49);
+export const bgWhite = (...args) => format(args, 47, 49);
+export const bgGray = (...args) => format(args, 100, 49);
