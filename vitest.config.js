@@ -1,14 +1,6 @@
 import {defineConfig} from "vitest/dist/config.js";
+import {backendTest} from "vitest-config-silverwind";
 
 export default defineConfig({
-  test: {
-    environment: "node",
-    testTimeout: 5000,
-    open: false,
-    allowOnly: true,
-    passWithNoTests: true,
-    globals: true,
-    watch: false,
-    outputDiffLines: Infinity,
-  },
+  test: backendTest,
 });
