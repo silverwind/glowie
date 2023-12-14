@@ -5,4 +5,4 @@ ignorePatterns:
  - /bin/
 
 rules:
-  import/no-unused-modules: [0]
+  i/no-unused-modules: [0]
