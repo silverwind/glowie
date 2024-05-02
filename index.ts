@@ -9,7 +9,8 @@ export function disableColor(): void {
 }
 
 function format(args: any[], start: number, end: number): string {
-  return enabled ? `\u001B[${start}m${args.join(" ")}\u001B[${end}m` : args.join(" ");
+  const content = args.join(" ");
+  return enabled ? `\u001B[${start}m${content}\u001B[${end}m` : content;
 }
 
 export const reset = (...args: any[]): string => format(args, 0, 0);
