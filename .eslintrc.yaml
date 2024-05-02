@@ -1,8 +1,4 @@
 root: true
-extends: silverwind
-
-ignorePatterns:
- - /bin/
-
-rules:
-  i/no-unused-modules: [0]
+extends:
+  - silverwind
+  - silverwind-typescript
