@@ -3,7 +3,10 @@
   "version": "1.3.5",
   "description": "Teeny-tiny terminal color library which does not perform any color support detection",
   "author": "silverwind <me@silverwind.io>",
-  "repository": "silverwind/glowie",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverwind/glowie.git"
+  },
   "license": "BSD-2-Clause",
   "type": "module",
   "sideEffects": false,
