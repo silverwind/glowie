@@ -4,6 +4,11 @@
 Teeny-tiny terminal color library which does not perform any color support detection, so you can hook up [capable detection modules](https://github.com/chalk/supports-color) yourself.
 
 ## Usage
+
+```sh
+pnpm add glowie
+```
+
 ```js
 import {green, disableColor} from "glowie";
 
