@@ -1,4 +1,4 @@
-let enabled: boolean = true;
+let enabled = true;
 
 export function enableColor(): void {
   enabled = true;
